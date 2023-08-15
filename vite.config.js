@@ -9,6 +9,6 @@ export default defineConfig({
         assetFileNames: `assets/[name].[hash][extname]`,
       },
     },
-    base: '/new-test/', // replace [your-repo-name] with your GitHub repository name.
+    base: process.env.NODE_ENV === 'production' ? '/new-test/' : '/',
   },
 });
