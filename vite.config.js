@@ -9,6 +9,6 @@ export default defineConfig({
         assetFileNames: `assets/[name].[hash][extname]`,
       },
     },
-    base: process.env.NODE_ENV === 'production' ? '/new-test/' : '/',
+    base: '/new-test/',
   },
 });
